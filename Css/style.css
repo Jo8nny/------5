@@ -1,0 +1,248 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+  *,*:before,*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  :focus,:active {outline: none;}
+  a:focus,a:active {outline: none;}
+  nav,footer,header,aside {display: block;}
+  html,body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
+  input,button,textarea {font-family: inherit;}
+  input::-ms-clear {display: none;}
+  button {cursor: pointer;}
+  button::-moz-focus-inner {padding: 0;border: 0;}
+  a,a:visited {text-decoration: none;}
+  a:hover {text-decoration: none;}
+  ul li {list-style: none;}
+  img {vertical-align: top;}
+  h1,h2,h3,h4,h5,h6 {font-size: inherit;font-weight: 400;}
+
+
+body {
+    background-color: #315283;
+    background: url(/img/backgroung\ font.jpg) center fixed no-repeat;
+    padding: 5px;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1693px;
+    margin: 0 auto;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+.header-font {
+    min-width: 100%;
+}
+
+.logo__body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px;
+}
+
+.logo__text {
+    font-family: Revalia;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 96px;
+    line-height: 119px;
+    color: #F3F3F3;
+}
+
+.tier__list {
+    font-family: Revalia;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 60px;
+    color: #000000;
+    background: #ECA02E;
+    border-radius: 17px;
+    width: 281px;
+    height: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 43px;
+}
+
+.column {
+    margin-bottom: 57px;
+}
+
+.column-row {
+    display: flex;
+}
+
+.block__splus {
+    background-color: #EF0000;
+}
+.block-rank {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 56px;
+    color: #000000;
+    border-radius: 16px 0px 0px 16px;
+    min-width: 144px;
+    min-height: 175px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #333333;
+    width: 100%;
+    border-radius: 0px 16px 16px 0px;
+    align-items: center;
+    padding: 9px 0px 9px 28px;
+}
+
+.frame {
+    border: 3px #D0B3B3 solid;
+    border-radius: 9px;
+    background: #333333;
+    width: 133px;
+    height: 157px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 8px 20px 8px 0px;
+}
+
+.icon {
+    position: absolute;
+    top: 10px;
+}
+
+.sign {
+    position: absolute;
+    top: 8px;
+    right: 4px;
+}
+
+.const {
+    position: absolute;
+    bottom: 30px;
+    right: 5px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    border: 1px #D6CECE solid;
+    border-radius: 8px;
+    background-color: #D6CECE;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.role {
+    position: absolute;
+    bottom: 3px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.block__s {
+    background-color: #FC4E17;
+}
+
+.block__a {
+    background-color:#F4744B;
+}
+
+.block__b {
+    background-color: #E98B48;
+}
+
+.block__c {
+    background-color: #FFB547;
+}
+
+.block__d {
+    background-color: #A4E912;
+}
+
+.block__e {
+    background-color: #9CF175;
+}
+
+.block__f {
+    background-color: #B8DDA1;
+}
+
+@media (max-width:1170px) {
+   .logo__text {
+        font-size: 70px;
+        text-align: center;
+        line-height: 80px;
+   }
+   .logo__body {
+    flex-direction: column;
+
+   }
+}
+
+@media (max-width:500px) {
+    .block-rank {
+        min-width: 80px
+    }
+    
+    .row {
+        justify-content: center;
+        padding: 0px;
+    }
+
+    .frame {
+        margin: 8px 2px;
+    }
+}
+
+@media (max-width:380px) {
+    .logo__text {
+        font-size: 60px;
+        text-align: center;
+        line-height: 80px;
+    }
+}
